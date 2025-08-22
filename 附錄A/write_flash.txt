@@ -1,0 +1,4 @@
+esptool --port COM4 erase_flash
+
+esptool --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 C:\tools\ESP32_GENERIC-20240105-v1.22.1.bin
+
